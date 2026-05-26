@@ -21,10 +21,10 @@ Hệ thống được mô phỏng trong môi trường máy ảo (VMware), sử 
 * Cấu hình ngưỡng (Triggers) linh hoạt để phát hiện sự cố sớm.
 * Tích hợp hệ thống cảnh báo tự động qua **Telegram Bot** ngay khi có Trigger kích hoạt.
 ## 5. Cài đặt và cấu hình chi tiết
-Để xem các bước cài đặt  và cấu hình chi tiết hệ thống này, truy cập: **[INSTALL_AND_CONFIGS.md](./INSTALL_AND_CONFIGS.md)**
+Để xem các bước cài đặt  và cấu hình chi tiết hệ thống này, xem tại: **[INSTALL_AND_CONFIGS.md](./INSTALL_AND_CONFIGS.md)**
 
 ## 6. Chỉnh sửa file cấu hình
-Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, truy cập: **[configs](/configs)**
+Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, xem tại: **[configs](/configs)**
 
 ## 7. Kết quả thu được
 Dưới đây là giao diện giám sát thực tế sau khi triển khai thành công:
