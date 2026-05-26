@@ -1,3 +1,4 @@
+# template sẵn của zabbix
 zabbix_export:
   version: '7.0'
   template_groups:
