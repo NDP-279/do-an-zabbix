@@ -18,4 +18,6 @@ Toàn bộ quá trình cài đặt hệ thống đều được ghi lại tại 
   - Bộ nhớ: `15GB`
   - RAM: `3GB`
   - Mạng: `Host-Only`
-## 2. 
+## 2. Cấu hình hệ thống
+### 2.1 cấu hình Zabbix Server
+
