@@ -75,10 +75,25 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
 # CẤU HÌNH HỆ THỐNG GIÁM SÁT
 ## 1. Khai báo host
+khai báo các Host đã tạo trên web giám sát, phải điền chính xác tên host đã cấu hình trên các máy trạm   
+gắn Host Group để kiểm soát máy trạm  
+Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp  
 ## 2. Gắn Template
+gắn các template phù hợp với từng host, máy trạm Windows gắn template `Windows by Zabbix Agent`, máy trạm Ubuntu gắn template`Linux by Zabbix Agent`.
 ## 3. Cấu hình Item và Trigger
+Iteam với trigger đã được tạo khi gắn template. Các thông số giám sát hay ngưỡng kích hoạt Trigger đều là tiêu chuẩn của Zabbix, có thể tùy chỉnh thủ công 
 ## 4. Cấu hình giám sát Web
+**Bước 1**: Tạo host mới để giám sát web  
+**Bước 2**: cấu hình web Scenario, thiết lập step trỏ tởi địa chỉ của dịch vụ Web là `http://192.168.27.150`  
+**Bước 3**: cấu hình macro trỏ tới địa chỉ IP của dịch vụ web để Zabbix Server có thể gửi yêu cầu HTTP và thu thập dữ liệu giám sát từ dịch vụ Apache. 
 ## 5. Cấu hình cảnh báo qua Telegram
+**Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token`  
+**Bước 2**: Tạo 1 group, thêm Bot đã tạo và IDBot để lấy ID group telegram  
+**Bước 3**: Khai báo Media Type Telegram, điền `API Token`, `parse mode` và kích hoạt  
+**Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng    
+truy cập Users chọn Admin, tại media thêm Telegram và điền chat ID của group telegram  
+**Bước 5**: Tạo action cảnh báo mới và định nghĩa quy trình hệ thống cảnh báo qua Telegram
+
 
 
 
