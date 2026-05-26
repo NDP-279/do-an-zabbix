@@ -19,8 +19,8 @@ Hệ thống được mô phỏng trong môi trường máy ảo (VMware), sử 
 - **Host 1 (Windows 10):** -IP: `192.168.27.130`
 - **Host 2 (Ubuntu 24.04 LTS):** - IP: `192.168.27.150`
 
-## 5. Cài đặt chi tiết
-Để xem các bước cài đặt chi tiết hệ thống này, truy cập: **[INSTALL.md](./INSTALL.md)**
+## 5. Cài đặt và cấu hình chi tiết
+Để xem các bước cài đặt  và cấu hình chi tiết hệ thống này, truy cập: **[INSTALL.md](./INSTALL.md)**
 
 ## 6. Chỉnh sửa file cấu hình
 Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, truy cập: **[configs](/configs)**
