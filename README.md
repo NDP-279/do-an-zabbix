@@ -3,8 +3,8 @@
 ## 1. Giới thiệu đề tài
 Đề tài tập trung nghiên cứu giải pháp giám sát hệ thống mã nguồn mở Zabbix, với mục đích giám sát đa thiết bị nhằm theo dõi tài nguyên, hiệu năng và đưa ra cảnh báo kịp thời khi có sự cố xảy ra.
 ## 2. Mô hình hệ thống
-Hệ thống bao gồm:
-- 01 máy chủ Zabbix Server tích hợp MySQL
+Hệ thống được triển khai trong môi trường mạng nội bộ gồm:
+- 01 máy chủ Zabbix Server tích hợp MySQL, có kết nối qua NAT
 - 01 máy Ubuntu cài đặt Zabbix Agent và dịch vụ Apache để thử nghiệm giám sát web
 - 01 máy Windows cài đặt Zabbix Agent
 - Hệ thống gửi cảnh báo đến điện thoại quản trị viên thông qua Telegram Bot API
