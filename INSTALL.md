@@ -5,19 +5,19 @@
   - Bộ nhớ: `20GB`
   - RAM: `4GB`
   - CPU : `2 cores`
-  - Mạng: 1 card mạng `NAT` và 1 card mạng `Host-Only`
+  - Mạng: 1 card mạng `NAT` và 1 card mạng `Host-Only`có IP: `192.168.27.100`
 - **Zabbix Agent 1**:
   - OS: `Windows 10`
   - Bộ nhớ: `30GB`
   - RAM: `2GB`
   - CPU: `2 cores`
-  - Mạng: `Host-Only`
+  - Mạng: `Host-Only` có IP: `192.168.27.130`
 - **Zabbix Agent 2**:
   - OS: Ubuntu 24.04 LTS
   - Bộ nhớ: `15GB`
   - RAM: `3GB`
   - CPU: `2 cores`
-  - Mạng: `Host-Only`
+  - Mạng: `Host-Only` có IP: `192.168.27.150`
 ## 2. Cài đặt hệ thống
 Toàn bộ quá trình cài đặt trên Ubuntu đều thực hiện ở terminal và cấp quyền quản trị cao nhất `root` dể dễ dàng thao tác.  
 Cài đặt Agent trên Windows sử dụng package tải trên [Zabbix Download.](https://www.zabbix.com/download_agents)
