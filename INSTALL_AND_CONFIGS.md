@@ -74,7 +74,11 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 `netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow protocol=TCP localport=10050`  
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
 # CẤU HÌNH HỆ THỐNG GIÁM SÁT
-
+## 1. Khai báo host
+## 2. Gắn Template
+## 3. Cấu hình Item và Trigger
+## 4. Cấu hình giám sát Web
+## 5. Cấu hình cảnh báo qua Telegram
 
 
 
