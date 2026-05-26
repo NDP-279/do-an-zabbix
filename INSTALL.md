@@ -73,7 +73,7 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 **Bước 3**: Mở cổng 10050 để Zabbix Server thu thập dữ liệu  
 `netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow protocol=TCP localport=10050`  
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
-## 3. Cấu hình hệ thống giám sát
+# CẤU HÌNH HỆ THỐNG GIÁM SÁT
 
 
 
