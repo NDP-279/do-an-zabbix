@@ -21,8 +21,15 @@
 ## 2. Cài đặt hệ thống
 Toàn bộ quá trình cài đặt đều được cấp quyền quản trị cao nhất `root` dể dễ dàng thao tác.
 ### 2.1 Cài đặt Zabbix Server
-**Bước 1**: Tải kho lưu trữ của Zabbix
-- #wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb
-- #dpkg -i zabbix-release_latest_7.0+ubuntu24.04_all.deb
-- #apt update
+**Bước 1**: Tải kho lưu trữ của Zabbix  
+wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb  
+dpkg -i zabbix-release_latest_7.0+ubuntu24.04_all.deb  
+apt update  
+**Bước 2**: cài đặt Zabbix Server, frontend, agent
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent  
+**Bước 3**: cài đặt MySQL server  
+apt update  
+apt install MySql-server  
+
+
 
