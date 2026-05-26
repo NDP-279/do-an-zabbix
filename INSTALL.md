@@ -30,6 +30,9 @@ apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sq
 **Bước 3**: cài đặt MySQL server  
 apt update  
 apt install MySql-server  
+**Bước 4**: tạo database  
+
+**Bước 5**: 
 
 
 
