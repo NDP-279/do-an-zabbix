@@ -33,8 +33,8 @@ Dưới đây là giao diện giám sát thực tế sau khi triển khai thành
 ![Zabbix Dashboard](images/dashboard.png)
 
 ### Biểu đồ giám sát tài nguyên
-![Zabbix Graph](images/graph.png)
+![Zabbix Graph](images/bieudo.png)
 
 ### Tin nhắn cảnh báo gửi về Telegram khi giả lập sự cố
-![Telegram Alert](images/alert.png)
+![Telegram Alert](images/canhbao.png)
 ## 8. Video demo
