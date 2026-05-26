@@ -87,7 +87,7 @@ Iteam với trigger đã được tạo khi gắn template. Các thông số gi�
 **Bước 2**: cấu hình web Scenario, thiết lập step trỏ tởi địa chỉ của dịch vụ Web là `http://192.168.27.150`  
 **Bước 3**: cấu hình macro trỏ tới địa chỉ IP của dịch vụ web để Zabbix Server có thể gửi yêu cầu HTTP và thu thập dữ liệu giám sát từ dịch vụ Apache. 
 ## 5. Cấu hình cảnh báo qua Telegram
-**Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token`  
+**Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token` [Ảnh tạo bot](images/taobot.png)  
 **Bước 2**: Tạo 1 group, thêm Bot đã tạo và IDBot để lấy ID group telegram  
 **Bước 3**: Khai báo Media Type Telegram, điền `API Token`, `parse mode` và kích hoạt  
 **Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng    
