@@ -95,6 +95,7 @@ Iteam với trigger đã được tạo khi gắn template. Các thông số gi�
 **Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng [Ảnh liên kết phương thức cảnh báo](images/thietlapphuongthuc.png)  
 truy cập Users chọn Admin, tại media thêm Telegram và điền chat ID của group telegram  
 **Bước 5**: Tạo action cảnh báo mới và định nghĩa quy trình hệ thống cảnh báo qua Telegram [Ảnh thiết lập thông báo qua Telegram](images/thietlapthongbao.png)
+## 6. Chỉnh sửa Dashboard
 
 
 
