@@ -20,7 +20,8 @@
   - Mạng: `Host-Only` có IP: `192.168.27.150`
 ## 2. Cài đặt hệ thống
 Toàn bộ quá trình cài đặt trên Ubuntu đều thực hiện ở terminal và cấp quyền quản trị cao nhất `root` dể dễ dàng thao tác.  
-Cài đặt Agent trên Windows sử dụng package tải trên [Zabbix Download.](https://www.zabbix.com/download_agents)
+Cài đặt Agent trên Windows sử dụng package tải trên [Zabbix Download.](https://www.zabbix.com/download_agents)  
+Đồ án sử dụng Zabbix phiên bản 7.0 LTS được hỗ trợ trên OS Ubuntu 24.04 LTS
 ### 2.1 Cài đặt Zabbix Server
 **Bước 1**: Tải kho lưu trữ của Zabbix  
 `wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb`  
