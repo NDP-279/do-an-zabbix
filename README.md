@@ -22,13 +22,13 @@ Hệ thống được mô phỏng hoàn toàn trong môi trường máy ảo (VM
 ## 5. Chỉnh sửa file cấu hình
 Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, truy cập: **[configs](/configs)**
 
-## 5. Kết quả thu được (Hình ảnh Dashboard)
+## 5. Kết quả thu được
 Dưới đây là giao diện giám sát thực tế sau khi triển khai thành công:
 
-### Giao diện giám sát tổng quan (Dashboard)
+### Giao diện giám sát tổng quan
 ![Zabbix Dashboard](images/dashboard.png)
 
-### Giao diện giám sát hiệu năng CPU/RAM
+### Biểu đồ giám sát tài nguyên
 ![Zabbix Graph](images/graph.png)
 
 ### Tin nhắn cảnh báo gửi về Telegram khi giả lập sự cố
