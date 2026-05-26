@@ -1,7 +1,7 @@
 # ĐỀ TÀI: NGHIÊN CỨU VÀ TRIỂN KHAI HỆ THỐNG GIÁM SÁT HẠ TẦNG MẠNG SỬ DỤNG ZABBIX
 
 ## 1. Giới thiệu đề tài
-Đề tài tập trung nghiên cứu giải pháp giám sát hệ thống mã nguồn mở Zabbix, nhằm theo dõi tài nguyên, hiệu năng máy chủ và đưa ra cảnh báo kịp thời khi có sự cố xảy ra.
+Đề tài tập trung nghiên cứu giải pháp giám sát hệ thống mã nguồn mở Zabbix, với mục đích giám sát đa thiết bị nhằm theo dõi tài nguyên, hiệu năng và đưa ra cảnh báo kịp thời khi có sự cố xảy ra.
 ## 2. Mô hình hệ thống
 Hệ thống bao gồm:
 - 01 máy chủ Zabbix Server tích hợp MySQL
