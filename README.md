@@ -9,7 +9,7 @@ Hệ thống được triển khai trong môi trường mạng nội bộ gồm:
 - 1 máy Windows cài đặt Zabbix Agent
 - Hệ thống gửi cảnh báo đến điện thoại quản trị viên thông qua Telegram Bot API
 ### Sơ đồ hệ thống như sau
-![Mô hình hệ thống](images/dashboard.png)
+![Mô hình hệ thống](images/sodo.png)
 ## 3. Các tính năng đã đạt được
 * Giám sát thời gian thực (Real-time monitoring) các thông số phần cứng (CPU, RAM, Disk, Network).
 * Cấu hình ngưỡng (Triggers) linh hoạt để phát hiện sự cố sớm.
