@@ -90,7 +90,7 @@ Iteam với trigger đã được tạo khi gắn template. Các thông số gi�
 **Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token` [Ảnh tạo bot](images/taobot.png)  
 **Bước 2**: Tạo 1 group, thêm Bot đã tạo và IDBot để lấy ID group telegram [Ảnh tạo group](images/taogroup.png)  
 **Bước 3**: Khai báo Media Type Telegram, điền `API Token`, `parse mode` và kích hoạt [Ảnh thiết lập media type](images/thietlapmediatype.png)  
-**Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng [Ảnh liên kết phương thức cảnh báo]()  
+**Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng [Ảnh liên kết phương thức cảnh báo](images/thietlapphuongthuc.png)  
 truy cập Users chọn Admin, tại media thêm Telegram và điền chat ID của group telegram  
 **Bước 5**: Tạo action cảnh báo mới và định nghĩa quy trình hệ thống cảnh báo qua Telegram [Ảnh thiết lập thông báo qua Telegram](images/thietlapthongbao.png)
 
