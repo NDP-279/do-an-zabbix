@@ -36,3 +36,4 @@ Dưới đây là giao diện giám sát thực tế sau khi triển khai thành
 
 ### Tin nhắn cảnh báo gửi về Telegram khi giả lập sự cố
 ![Telegram Alert](images/alert.png)
+## 8. Video demo
