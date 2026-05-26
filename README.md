@@ -12,7 +12,7 @@ Hệ thống bao gồm:
 - giám sát tài nguyên, hiệu năng các host
 - cảnh báo đến quản trị viên qua Telegram
 ## 4. Mô hình triển khai
-Hệ thống được mô phỏng trong môi trường máy ảo (VMware), phiên bản Zabbix 7.0 LTS với các thành phần:
+Hệ thống được mô phỏng trong môi trường máy ảo (VMware),sử dụng phiên bản Zabbix 7.0 LTS với các thành phần:
 - **Zabbix Server và Web Frontend (Ubuntu 24.04 LTS):**- IP: `192.168.27.100`
 - **Database:** MySQL Server (tích hợp cùng máy Server)
 - **Host 1 (Windows 10):** -IP: `192.168.27.130`
