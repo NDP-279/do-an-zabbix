@@ -22,7 +22,7 @@ Hệ thống được mô phỏng hoàn toàn trong môi trường máy ảo (VM
 ## 5. Chỉnh sửa file cấu hình
 Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, truy cập: **[configs](/configs)**
 
-## 5. Kết quả thu được
+## 6. Kết quả thu được
 Dưới đây là giao diện giám sát thực tế sau khi triển khai thành công:
 
 ### Giao diện giám sát tổng quan
