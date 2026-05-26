@@ -17,7 +17,7 @@ Hệ thống được mô phỏng hoàn toàn trong môi trường máy ảo (VM
 - **Host 2 (Ubuntu 24.04 LTS):** - IP: `192.168.27.150`
 
 ## 4. Cài đặt chi tiết
-Để xem các bước chuẩn bị môi trường và câu lệnh cài đặt chi tiết hệ thống này,truy cập: **[INSTALL.md](./INSTALL.md)**
+Để xem các bước chuẩn bị môi trường và câu lệnh cài đặt chi tiết hệ thống này, truy cập: **[INSTALL.md](./INSTALL.md)**
 
 ## 5. Chỉnh sửa file cấu hình
 Để xem các file chỉnh sửa phục vụ cho việc kết nối và giám sát của Zabbix, truy cập: **[configs](/configs)**
