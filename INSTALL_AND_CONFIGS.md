@@ -81,8 +81,8 @@ gắn Host Group để kiểm soát máy trạm
 Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp  
 ## 2. Gắn Template
 gắn các template phù hợp với từng host 
-- máy trạm Windows gắn template `Windows by Zabbix Agent`.(template/Windows-by-zabbix-agent.yaml)
-- máy trạm Ubuntu gắn template`Linux by Zabbix Agent`.
+- máy trạm Windows gắn template [Windows by Zabbix Agent](template/Windows-by-zabbix-agent.yaml)
+- máy trạm Ubuntu gắn template [Linux by Zabbix Agent](template/Linux-by-zabbix-agent.yaml)
 ## 3. Cấu hình Item và Trigger
 Iteam với trigger đã được tạo khi gắn template. Các thông số giám sát hay ngưỡng kích hoạt Trigger đều là tiêu chuẩn của Zabbix, có thể tùy chỉnh thủ công 
 ## 4. Cấu hình giám sát Web
