@@ -1,5 +1,4 @@
 # CÀI ĐẶT HỆ THỐNG GIÁM SÁT HẠ TẦNG MẠNG ZABBIX
-Toàn bộ quá trình cài đặt hệ thống đều được ghi lại tại đây
 ## 1. Cấu hình máy ảo
 - **Zabbix Server**:
   - OS: `Ubuntu 24.04 LTS`
@@ -17,7 +16,13 @@ Toàn bộ quá trình cài đặt hệ thống đều được ghi lại tại 
   - OS: Ubuntu 24.04 LTS
   - Bộ nhớ: `15GB`
   - RAM: `3GB`
+  - CPU: `2 cores`
   - Mạng: `Host-Only`
-## 2. Cấu hình hệ thống
-### 2.1 cấu hình Zabbix Server
+## 2. Cài đặt hệ thống
+Toàn bộ quá trình cài đặt đều được cấp quyền quản trị cao nhất `root` dể dễ dàng thao tác.
+### 2.1 Cài đặt Zabbix Server
+**Bước 1**: Tải kho lưu trữ của Zabbix
+- #wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb
+- #dpkg -i zabbix-release_latest_7.0+ubuntu24.04_all.deb
+- #apt update
 
