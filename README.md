@@ -38,3 +38,4 @@ Dưới đây là giao diện giám sát thực tế sau khi triển khai thành
 ### Tin nhắn cảnh báo gửi về Telegram khi giả lập sự cố
 ![Telegram Alert](images/canhbao.png)
 ## 8. Video demo
+[**video demo đồ án triển khai giám sát hạ tầng mạng sử dụng Zabbix**](https://humgedu-my.sharepoint.com/:v:/g/personal/2121050809_student_humg_edu_vn/IQCtsGoY-BJaRqcKLSPZYO8XAelsA-oTDnQUtFw0SrBDPBE)
