@@ -70,7 +70,7 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 `systemctl enable zabbix-agent apache2`  
 ### 2.3 Cài đặt Zabbix Agent trên host Windows
 **Bước 1**: tải Zabbix Agent trên [Zabbix Download.](https://www.zabbix.com/download_agents), phiên bản phù hợp với Zabbix Server.   
-**Bước 2**: cài đặt gói, điền các tham số như `Host name`= `Windows-client`, `Server IP`: `192.168.27.100`, `Server for active check`: `192.168.27.100`  
+**Bước 2**: cài đặt gói, điền các tham số như `Host name`= `Windows-client`, `Server IP`: `192.168.27.100`, `Server for active check`: `192.168.27.100` [Tham số Agent Windows 10](images/thamsowindows.png)  
 **Bước 3**: Mở cổng 10050 để Zabbix Server thu thập dữ liệu  
 `netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow protocol=TCP localport=10050`  
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
