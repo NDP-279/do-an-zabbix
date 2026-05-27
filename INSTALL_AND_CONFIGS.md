@@ -20,8 +20,8 @@
   - Mạng: `Host-Only` có IP: `192.168.27.150`
 ## 2. Cài đặt hệ thống
 Toàn bộ quá trình cài đặt trên Ubuntu đều thực hiện ở terminal và cấp quyền quản trị cao nhất `root` dể dễ dàng thao tác.  
-Cài đặt Agent trên Windows sử dụng package tải trên [Zabbix Download.](https://www.zabbix.com/download_agents)  
-Đồ án sử dụng Zabbix phiên bản 7.0 LTS được hỗ trợ trên OS Ubuntu 24.04 LTS
+Cài đặt Agent trên Windows sử dụng package tải trên [Zabbix Download](https://www.zabbix.com/download_agents).  
+Đồ án sử dụng Zabbix phiên bản 7.0 LTS được hỗ trợ trên OS Ubuntu 24.04 LTS.
 ### 2.1 Cài đặt Zabbix Server
 **Bước 1**: Tải kho lưu trữ của Zabbix  
 `wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb`  
@@ -72,36 +72,39 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 **Bước 1**: tải Zabbix Agent trên [Zabbix Download.](https://www.zabbix.com/download_agents), phiên bản phù hợp với Zabbix Server.   
 **Bước 2**: cài đặt gói, điền các tham số như `Host name`= `Windows-client`, `Server IP`: `192.168.27.100`, `Server for active check`: `192.168.27.100` [Tham số Agent Windows 10](images/thamsowindows.png)  
 **Bước 3**: Mở cổng 10050 để Zabbix Server thu thập dữ liệu  
+vào Command Port, chạy quyền administrator và cấu hình mở cổng 10050  
 `netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow protocol=TCP localport=10050`  
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
 # CẤU HÌNH HỆ THỐNG GIÁM SÁT
 ## 1. Khai báo host
 Khai báo các Host đã tạo trên web giám sát, phải điền chính xác tên host đã cấu hình trên các máy trạm. Đồ án triển khai 2 máy trạm bao gồm:
 - máy Ubuntu có hostname là `Ubuntu-client`
-- máy Windows có hostname là `Windows-client`  
+- máy Windows có hostname là `Windows-client`
+
+
 Gắn Host Group để kiểm soát máy trạm. Cả 2 máy trạm đều được gắn Hostgroup là `Virtual Machine`  
-Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp
-* máy Ubuntu có IP `192.168.27.150`
-* máy Windows có IP `192.168.27.130`
+Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp.
+* máy Ubuntu có IP `192.168.27.150`.
+* máy Windows có IP `192.168.27.130`.
 ## 2. Gắn Template
 gắn các template phù hợp với từng host 
-- máy trạm Windows gắn template [Windows by Zabbix Agent](template/Windows-by-zabbix-agent.yaml)
-- máy trạm Ubuntu gắn template [Linux by Zabbix Agent](template/Linux-by-zabbix-agent.yaml)
+- máy trạm Windows gắn template [Windows by Zabbix Agent](template/Windows-by-zabbix-agent.yaml).
+- máy trạm Ubuntu gắn template [Linux by Zabbix Agent](template/Linux-by-zabbix-agent.yaml).
 ## 3. Cấu hình Item và Trigger
-Iteam với trigger đã được tạo khi gắn template. Các thông số giám sát hay ngưỡng kích hoạt Trigger đều là tiêu chuẩn của Zabbix, có thể tùy chỉnh thủ công 
+Iteam với trigger đã được tạo khi gắn template. Các thông số giám sát hay ngưỡng kích hoạt Trigger đều là tiêu chuẩn của Zabbix, có thể tùy chỉnh thủ công. 
 ## 4. Cấu hình giám sát Web
 **Bước 1**: Tạo host mới để giám sát web và liên kết template `Apache by HTTP`. [Ảnh tạo host web](images/hostweb.png)  
 **Bước 2**: cấu hình web Scenario, thiết lập step trỏ tởi địa chỉ của dịch vụ Web là `http://192.168.27.150`. [Ảnh cấu hình web Scenario](images/stepweb.png)  
 **Bước 3**: cấu hình macro trỏ tới địa chỉ IP của dịch vụ web để Zabbix Server có thể gửi yêu cầu HTTP và thu thập dữ liệu giám sát từ dịch vụ Apache. [Ảnh cấu hình macro](images/macroweb.png)
 ## 5. Cấu hình cảnh báo qua Telegram
-**Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token` [Ảnh tạo bot](images/taobot.png)  
-**Bước 2**: Tạo 1 group, thêm Bot đã tạo và IDBot để lấy ID group telegram [Ảnh tạo group](images/taogroup.png)  
-**Bước 3**: Khai báo Media Type Telegram, điền `API Token`, `parse mode` và kích hoạt [Ảnh thiết lập media type](images/thietlapmediatype.png)  
-**Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng [Ảnh liên kết phương thức cảnh báo](images/thietlapphuongthuc.png)  
-truy cập Users chọn Admin, tại media thêm Telegram và điền chat ID của group telegram  
-**Bước 5**: Tạo action cảnh báo mới và định nghĩa quy trình hệ thống cảnh báo qua Telegram [Ảnh thiết lập thông báo qua Telegram](images/thietlapthongbao.png)
+**Bước 1**: Tạo bot Telegram ở @BotFather có tên với hậu tố `Bot` để lấy `HTTP API Token` [Ảnh tạo bot](images/taobot.png).  
+**Bước 2**: Tạo 1 group, thêm Bot đã tạo và IDBot để lấy ID group telegram [Ảnh tạo group](images/taogroup.png). 
+**Bước 3**: Khai báo Media Type Telegram, điền `API Token`, `parse mode` và kích hoạt [Ảnh thiết lập media type](images/thietlapmediatype.png).  
+**Bước 4**: Liên kết phương thức cảnh báo với tài khoản người dùng [Ảnh liên kết phương thức cảnh báo](images/thietlapphuongthuc.png).  
+truy cập Users chọn Admin, tại media thêm Telegram và điền chat ID của group telegram.  
+**Bước 5**: Tạo action cảnh báo mới và định nghĩa quy trình hệ thống cảnh báo qua Telegram [Ảnh thiết lập thông báo qua Telegram](images/thietlapthongbao.png).
 ## 6. Chỉnh sửa Dashboard
-Chỉnh sửa Dashboard một cách trực quan, theo dõi được toàn bộ hệ thống
+Chỉnh sửa Dashboard một cách trực quan, theo dõi được toàn bộ hệ thống.
 
 
 
