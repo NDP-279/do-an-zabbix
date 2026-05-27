@@ -76,9 +76,13 @@ chỉnh sửa file `status.conf` của apache để server có thể truy cập 
 **Bước 4**: Cho phép dịch vụ khởi chạy khi khởi động máy
 # CẤU HÌNH HỆ THỐNG GIÁM SÁT
 ## 1. Khai báo host
-khai báo các Host đã tạo trên web giám sát, phải điền chính xác tên host đã cấu hình trên các máy trạm   
-gắn Host Group để kiểm soát máy trạm  
-Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp  
+Khai báo các Host đã tạo trên web giám sát, phải điền chính xác tên host đã cấu hình trên các máy trạm. Đồ án triển khai 2 máy trạm bao gồm:
+- máy Ubuntu có hostname là `Ubuntu-client`
+- máy Windows có hostname là `Windows-client`  
+Gắn Host Group để kiểm soát máy trạm. Cả 2 máy trạm đều được gắn Hostgroup là `Virtual Machine`  
+Khai báo Agent IP để server giám sát chính xác Host đó, từ đó gắn template phù hợp
+* máy Ubuntu có IP `192.168.27.150`
+* máy Windows có IP `192.168.27.130`
 ## 2. Gắn Template
 gắn các template phù hợp với từng host 
 - máy trạm Windows gắn template [Windows by Zabbix Agent](template/Windows-by-zabbix-agent.yaml)
